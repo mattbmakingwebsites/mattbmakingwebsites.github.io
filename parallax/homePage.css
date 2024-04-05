@@ -1,0 +1,309 @@
+/* 
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*MAIN STYLES*/
+body {
+  background-image: radial-gradient(#fff, #c2c2c2);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  font-size: 28px;
+  margin: 20px 0 0 0;
+  padding: 40px 0;
+  color: #DFDFDF;
+  border-radius: 35% 80% 35% 80%;
+  text-shadow: 0px 0px 1px #181818;
+  box-shadow: 0px 0px 20px #181818;
+  background-image: linear-gradient(to bottom right, red, green, blue);
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+header nav ul li {
+  font-size: 22px;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+  padding: 20px 60px;
+  background-color: #181818;
+  height: 80px;
+}
+footer #socials_list {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+}
+footer #others_list {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+footer nav ul {
+  display: flex;
+}
+footer nav ul li {
+  margin: 0 10px 0 10px;
+}
+footer nav ul li a {
+  text-decoration: none;
+  box-shadow: 0px 1px 10px #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  color: purple;
+  transition: 1s;
+}
+footer nav ul a:hover {
+  box-shadow: none;
+  background-color: #DFDFDF;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  width: 20%;
+}
+
+.boundary {
+  width: 80%;
+  margin: 2.5% 0;
+  height: 5px;
+  background-image: linear-gradient(to right, red, green, blue);
+}
+
+#examplerow {
+  width: 80%;
+  min-height: 90%;
+  margin: 2.5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  box-shadow: 0px 0px 20px #181818;
+}
+
+figcaption {
+  margin: 5px 0 0 0;
+  padding: 5px;
+  background-color: #666666;
+  border-radius: 2px 2px 100% 2px;
+}
+
+#secondExample {
+  margin: 2.5% 0;
+}
+#secondExample figure {
+  box-shadow: -10px -10px 0 palevioletred, 10px 10px 0 cyan, 0 0 500px 50px #ffffff;
+}
+#secondExample figure img {
+  width: 100%;
+}
+
+#thirdExample {
+  margin: 2.5% 0;
+  width: 800px;
+  height: 800px;
+  box-shadow: -20px -20px 0 0 olivedrab, 20px 20px 0 0 olivedrab, -20px 20px 0 0 olivedrab, 20px -20px 0 0 olivedrab, -40px -40px 0 0 orange, 40px 40px 0 0 purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 1s;
+}
+#thirdExample #boxes {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+#thirdExample #dOne {
+  margin: 20% 0 0 25%;
+  width: 20%;
+  height: 20%;
+  background-color: orange;
+  background-image: linear-gradient(to bottom right, orange, orange, olivedrab, olivedrab);
+  border-radius: 20% 60% 0 60%;
+  transition: 1s;
+}
+#thirdExample #dTwo {
+  margin: auto;
+  width: 20%;
+  height: 20%;
+  background-color: olivedrab;
+  border-radius: 0 60% 0 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+#thirdExample #dTwo a {
+  text-decoration: none;
+  color: #DFDFDF;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: 0.6s;
+}
+#thirdExample #dTwo a:hover {
+  color: #181818;
+  font-size: 32px;
+  background: -webkit-linear-gradient(orange, olivedrab, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#thirdExample #dThree {
+  margin: 0 5% 0 55%;
+  width: 20%;
+  height: 20%;
+  background-color: purple;
+  background-image: linear-gradient(to bottom right, olivedrab, olivedrab, purple, purple);
+  border-radius: 0 60% 20% 60%;
+  transition: 1s;
+}
+
+#thirdExample:hover {
+  box-shadow: -10px -10px 0 0 olivedrab, 10px 10px 0 0 olivedrab, -10px 10px 0 0 olivedrab, 10px -10px 0 0 olivedrab, -20px -20px 0 0 purple, 20px 20px 0 0 orange;
+}
+#thirdExample:hover #boxes {
+  rotate: 540deg;
+}
+#thirdExample:hover #dTwo a {
+  rotate: 180deg;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#text h2, #text p {
+  margin: 2% 0 0 0;
+}
+#text h2 {
+  font-size: 48px;
+}
+#text p {
+  width: 70%;
+  font-size: 32px;
+  line-height: 1.2em;
+}
+
+#layers {
+  margin: 2.5%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #181818;
+  box-shadow: 6px 6px #ee8c3f, 14px 14px #181818;
+  box-shadow: 10px 10px #ee8c3f, 20px 20px #181818;
+  transition: 0.8s;
+}
+#layers img {
+  width: 30%;
+  box-shadow: none;
+  transition: 0.8s;
+}
+#layers img:nth-child(1) {
+  margin: 0 20% 0 0;
+}
+#layers img:nth-child(2) {
+  margin: -30% -20% 0 0;
+}
+
+#layers:hover {
+  box-shadow: 6px 6px #ee8c3f, 12px 12px #181818;
+}
+#layers:hover img {
+  rotate: 360deg;
+}/*# sourceMappingURL=homePage.css.map */
